@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth selection:bg-green-700 selection:text-neutral-50">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben | Portfolio Website</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
+    rel="stylesheet"> 
+    
+    <script src="https://kit.fontawesome.com/33d6e1a458.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body class="bg-green-100 text-neutral-800 h-screen font-inter
+font-normal ">
+    <nav class="py-4 px-5 bg-white shadow-md md:flex md:items-center md:justify-between relative z-{999}">
+        <div class="flex justify-between items-center  relative z-{999}">
+            <a href="#">
+                <span class="hover:text-green-600 duration-500 text-2xl my-auto flex items-center">
+                    <!-- <img class="inline h-9 mx-2" src="/images/head.png"
+                    alt="logo"> -->
+                    <!-- <i class="fa-solid fa-code-simple h-9 mx-2"></i> -->
+                    <h1 class="my-auto  font-inter font-bold ">Ben</h1>
+                </span>
+            </a>
+            <button id="menu-button" name="menu" class="text-3xl block md:hidden duration-500" onclick="Menu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <ul class="duration-300 md:flex md:items-center z-{-1} md:z-auto absolute md:static
+        bg-white w-full left-0 md:w-auto pt-6 pb-2 md:pt-0 md:pb-0 opacity-0
+        md:opacity-100 left-{-400px} transition-all ease-in duration font-inter
+        font-thin">
+            <li><a href="#work" class="text-xl hover:text-green-600 duration-500 mx-5 md:mx-3 my-6 md:my-0" onclick="Menu()">Work</a></li>
+            <li><a href="#skills" class="text-xl hover:text-green-600 duration-500 mx-5 md:mx-3 my-6 md:my-0" onclick="Menu()">Skills</a></li>
+            <li><a href="#clients" class="text-xl hover:text-green-600 duration-500 mx-5
+            md:mx-3 my-6 md:my-0" onclick="Menu()">Clients</a></li>
+            <button class="bg-green-400 hover:bg-green-600 text-neutral-100 font-inter font-normal
+            px-4 py-2 rounded-2xl my-4 md:my-0 ml-2 md:ml-6 duration-500"
+            onclick="Menu(); location.href='#contact'" type="button">Contact</button>
+        </ul>
+        
+    </nav>
+
+    <!-- <section class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10
+    px-5 pb-10">
+        <div class=""><img src="/images/pixelart1.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/pixelart3.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/pixelart2-2.gif" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/pixelart4.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/pixelart5.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/drawing1.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/painting2.jpg" alt=""class="object-cover"></div>
+        <div class=""><img src="/images/painting1.jpg" alt="" class="object-cover"></div>
+        <div class=""><img src="/images/painting3.jpg" alt=""
+        class="object-cover"></div>
+        <div class=""><img src="/images/drawing2.jpg" alt="" class="object-fill"></div>
+        
+    </section> -->
+
+    <section id="about" class="pt-20 pb-20 bg-green-500 text-neutral-100">
+        <div class="flex mx-5 gap-8 justify-center items-center flex-col-reverse
+        lg:flex-row">
+            <div>
+                <h2 class="my-12 lg:ml-12 2xl:ml-20 text-5xl font-bold text-center
+                lg:text-left"><span class="font-normal">Hi, I'm</span> Ben</h2>
+                <p class="text-2xl font-thin text-left indent-8">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.</p>
+            </div>
+            <img src="/images/head.png" alt="" class="h-full md:h-96 w-auto my-4">
+        </div>
+    </section>
+
+
+    <section id="work" class="py-8"></section>
+        <h2 class="text-5xl text-center font-bold mb-10">Previous Work</h2>
+        <div class="grid lg:grid-cols-3 gap-4 mx-5 mb-28">
+            <article class="py-2 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="overflow-hidden rounded-lg shadow my-6">
+                    <a href="" class=""><img src="/images/computer1.jpg" alt="" class="hover:scale-105 duration-500"></a>
+                </div>
+                <h3 class="text-center my-4 text-3xl font-bold">Project 1</h3>
+                <section class="text-center font-thin mx-6 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem nisi tempore sint excepturi recusandae sunt quos nihil architecto dolorum! Repudiandae veritatis dignissimos est, laborum eius quam perspiciatis ipsum dolorem.</section>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check Github repository</a></h4>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check live site</a></h4>
+            </article>
+            <article class="py-4 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="overflow-hidden rounded-lg shadow my-6">
+                    <a href="" class=""><img src="/images/computer4.jpg" alt="" class="hover:scale-105 duration-500"></a>
+                </div>
+                <h3 class="text-center my-4 text-3xl font-bold">Project 2</h3>
+                <section class="text-center font-thin mx-6 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem nisi tempore sint excepturi recusandae sunt quos nihil architecto dolorum! Repudiandae veritatis dignissimos est, laborum eius quam perspiciatis ipsum dolorem.</section>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check Github repository</a></h4>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check live site</a></h4>
+            </article>
+            <article class="py-2 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="overflow-hidden rounded-lg shadow my-6">
+                    <a href="" class=""><img src="/images/computer3.jpg" alt="" class="hover:scale-105 duration-500"></a>
+                </div>
+                <h3 class="text-center my-4 text-3xl font-bold">Project 3</h3>
+                <section class="text-center font-thin mx-6 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem nisi tempore sint excepturi recusandae sunt quos nihil architecto dolorum! Repudiandae veritatis dignissimos est, laborum eius quam perspiciatis ipsum dolorem.</section>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check Github repository</a></h4>
+                <h4 class="text-center"><a href="" class="hover:text-green-700 text-green-500 duration-500 underline">Check live site</a></h4>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="skills" class="pt-20 pb-20 bg-green-500 text-neutral-100">
+        <h2 class="text-5xl text-center font-bold mb-10">Technical Skills</h2>
+        <div class="flex gap-8 mx-4 justify-center flex-wrap">
+            <div class="text-center">
+                <i class="devicon-react-original text-7xl"></i>
+                <h3 class="text-xl font-bold">React</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-tailwindcss-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Tailwind</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-webpack-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Webpack</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-html5-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">HTML5</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-github-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Github</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-css3-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">CSS3</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-javascript-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Javascript</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-java-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Java</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-python-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Python</h3>
+            </div>
+            <div class="text-center">
+                <i class="devicon-godot-plain text-7xl"></i>
+                <h3 class="text-xl font-bold">Godot</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="clients" class="py-8"></section>
+        <h2 class="text-5xl text-center font-bold mb-10">Past Clients</h2>
+        <div class="grid lg:grid-cols-3 gap-4 mx-5 mb-28">
+            <article class="py-2 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="h-3 text-3xl text-left text-neutral-600 my-2">“</div>
+                <section class="text-center font-thin mx-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem nisi tempore sint excepturi recusandae sunt quos nihil architecto dolorum! Repudiandae veritatis dignissimos est, laborum eius quam perspiciatis ipsum dolorem.</section>
+                <div class="h-3 text-3xl text-right text-neutral-600 my-1">”</div>
+                <div class="text-right mt-4">-John Snow, Physician</div>
+            </article>
+            <article class="py-2 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="h-3 text-3xl text-left text-neutral-600 my-2">“</div>
+                <section class="text-center font-thin mx-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident unde fuga consectetur sequi quae qui, rerum fugit magnam consequatur deserunt? Earum facere porro quod dolor unde culpa laudantium tenetur!</section>
+                <div class="h-3 text-3xl text-right text-neutral-600 my-1">”</div>
+                <div class="text-right mt-4">-Jack Black, Software Developer</div>
+            </article>
+            <article class="py-2 px-6 m-2 bg-white rounded-lg shadow-md">
+                <div class="h-3 text-3xl text-left text-neutral-600 my-2">“</div>
+                <section class="text-center font-thin mx-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatem eius accusamus velit nostrum autem, repellat enim id accusantium impedit? Illum ut praesentium necessitatibus ea consectetur, nesciunt saepe obcaecati quo!</section>
+                <div class="h-3 text-3xl text-right text-neutral-600 my-1">”</div>
+                <div class="text-right mt-4">-Jennifer Gartner, Marketing Consultant</div>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="contact" class=" py-60 mt-10 bg-green-500">        
+        <h2 class="text-7xl text-center font-bold text-neutral-100 flex justify-center">
+            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+            <span class="hidden md:inline"><i class="fa-solid fa-arrow-right"></i></span>
+            <a href="mailto:abc@gmail.com" class="underline hover:text-neutral-800 duration-500 mx-4">Email me</a>
+            <span class="hidden md:inline"><i class="fa-solid fa-arrow-left"></i></span>
+        </h2>
+    </section>
+
+
+    <footer id="footer" class="relative w-full bg-neutral-900 text-neutral-200 flex justify-between
+    px-4 py-3 items-center shadow m-auto">
+        <div class="text-2xl w-40">
+            <a class="hover:text-yellow-500 duration-500 mx-1" href=""><i class="mx-0 fa-solid fa-envelope"></i></a>
+            <a class="hover:text-blue-400 duration-500 mx-1" href=""><i class="mx-0 fa-brands fa-twitter"></i></a>
+            <a class="hover:text-red-500 duration-500 mx-1" href=""><i class="mx-0 fa-solid fa-globe"></i></a>
+            <a class="hover:text-purple-500 duration-500 mx-1" href=""><i class="mx-0 fa-brands fa-github"></i></a>
+        </div>
+        <span class="hidden md:inline">© 2022<a class="ml-1
+        hover:text-green-500 duration-500 underline" href="">Ben</a></span>
+        <a href="#" class="inline"><i class="fa-solid fa-arrow-up
+        hover:bg-neutral-200 hover:text-neutral-900 ml-32 px-3 py-2 rounded-full duration-500"></i></a>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</html>
